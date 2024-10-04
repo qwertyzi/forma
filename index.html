@@ -116,19 +116,49 @@
                         <input class="input" type="passsword" name="">    
                     </label>
                     <input type="button" value="войти" class="auth__btn">
-
                     
                 </form>
-
                 <form class="settings__form">
                     <h3 class="settings__label">Настройки</h3>
+                    <label class="label">
+                        <select class="settings__input">
+                            <option value="StratoSkyeng">StratoSkyeng</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Opensans">Opensans</option>
+                        </select>
+                    </label>
+                    <label class="label">
+                        Razmer:
+                        <input type="number" class="settings__input settings__font-size" >
+                        px
+                    </label>
+                    <label class="label">
+                        cvet:
+                        <input type="color" class="settings__input">
+                    </label>
+                    <label class="label">
+                        interval
+                        <input type="range" class="settings__input" min="0" max="300" step="10" value="150">
+                    </label>
+                    <div class="label">
+                        <label class="settings__background-color-label white">
+                            <input type="radio" name="font-color" id="font-color">
+                        </label>
+                        <label class="settings__background-color-label bisque">
+                            <input type="radio" name="font-color" id="font-color">
+                        </label>
+                        <label class="settings__background-color-label grey">
+                            <input type="radio" name="font-color" id="font-color">
+                        </label>
+                        <label class="settings__background-color-label black">
+                            <input type="radio" name="font-color" id="font-color">
+                        </label>
+
+                    </div>
                     
                 </form>
-
             </div>
         </div>
-
     </main>
 </body>
-
 </html>
