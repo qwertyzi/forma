@@ -9,7 +9,11 @@ const colorInput = rootElement.querySelector(".settings__font-color");
 const settingsIntervalInput = rootElement.querySelector(".settings__interval");
 const fontChangeSelect = rootElement.querySelector('.settings__font-change');
 
-
+form.addEventListener("change", () => {
+    rootElement.style.fontFamily = `'${fontChangeSelect.value}', sans-serif`;
+    rootElement.style.fontSize = fontSize.value + "px";
+    rootElement.style.color = colorInput.value;
+}) ;
 
 
 
@@ -25,3 +29,4 @@ settingsCloseBtn.addEventListener('click', () => {
         settingsCloseBtn.classList.add('settings__close_reverse');
     }
 });
+
